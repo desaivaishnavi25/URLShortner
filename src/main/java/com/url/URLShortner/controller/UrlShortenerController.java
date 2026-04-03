@@ -26,7 +26,7 @@ public class UrlShortenerController {
         }
 
         String shortCode = service.shortenUrl(request.getUrl(), expiryDate);
-        String shortUrl = "http://localhost:8080/" + shortCode;
+        String shortUrl = "https://urlshortner-vx6b.onrender.com/" + shortCode;
 
         return ResponseEntity.ok(Map.of("shortUrl", shortUrl));
     }
